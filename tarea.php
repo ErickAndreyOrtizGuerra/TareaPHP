@@ -1,11 +1,11 @@
 <?php
-// Definir el numero del que queremos verificar si es par
-$numero = 25; // Puedes cambiar este numero al que desees verificar
+// Definir el numero del que queremos mostrar la tabla de multiplicar
+$numero = 34; // Puedes cambiar este numero al que desees mostrar su tabla de multiplicar
 
-// Verificar si el número es par
-if ($numero % 2 == 0) {
-    echo "$numero es un numero par";
-} else {
-    echo "$numero no es un numero par";
+// Mostrar la tabla de multiplicar
+echo "Tabla de multiplicar del $numero:\n";
+for ($i = 1; $i <= 10; $i++) {
+    $resultado = $numero * $i;
+    echo "$numero x $i = $resultado\n";
 }
 ?>
